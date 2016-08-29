@@ -31,6 +31,8 @@ If *dates* is specified, sets the scale's input domain to the specified array of
 
 Extends the domain so that it starts and ends on nice round values as determined by the specified [time *interval*](Time-Intervals.md) and optional *step* count. As an alternative to specifying an explicit time interval, a numeric *count* can be specified, and a time interval will be chosen automatically to be consistent with [scale.ticks](#ticks). If *count* is not specified, it defaults to 10.
 
+This method is applied after <b>domain</b>
+
 This method typically extends the scale's domain, and may only extend the bounds to the nearest round value. Nicing is useful if the domain is computed from data and may be irregular. For example, for a domain of [2009-07-13T00:02, 2009-07-13T23:48], the nice domain is [2009-07-13, 2009-07-14]. If the domain has more than two values, nicing the domain only affects the first and last value.
 
 <a name="range" href="Time-Scales#range">#</a> scale.<b>range</b>([<i>values</i>])
